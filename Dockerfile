@@ -1,3 +1,3 @@
 FROM selenium/standalone-firefox:latest
 
-RUN sudo apt-get update && sudo apt-get install libc6-dev
+RUN sudo apt-get -y update && sudo apt-get install -y libc6-dev
