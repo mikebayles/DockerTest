@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM php:7.0-apache
 
 RUN apt-get -y update && apt-get install -y build-essential libxss1 libappindicator1 libindicator7 wget
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
