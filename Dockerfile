@@ -1,6 +1,5 @@
 FROM php:7.0-apache
 
-RUN sed -i 's!/var/www/html!/var/www/html/Phase 3!g' /etc/apache2/apache2.conf
 RUN docker-php-ext-install mysqli
 RUN apt-get -y update && apt-get install -y build-essential libxss1 libappindicator1 libindicator7 wget
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
